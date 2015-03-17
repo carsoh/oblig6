@@ -23,6 +23,12 @@ public class Main {
 	EldsteForstResptListe liste = new EldsteForstResptListe();
 	YngsteForstResptListe liste2 = new YngsteForstResptListe();
 
+	YngsteForstResptListe liste3 = new YngsteForstResptListe();
+
+	liste.finn(2);//letter paa en tom liste
+
+
+	//setter inn noen resepter
 	liste.settInn(r[0]);
 	liste.settInn(r[1]);
 	liste.settInn(r[2]);
@@ -35,6 +41,11 @@ public class Main {
 	liste2.settInn(r[3]);
 	liste2.settInn(r[3]);
 
+	System.out.println(liste.finn(2).getPris());//letter etter en resept
+
+	System.out.println(".................");
+
+	
 	for(Resepter rrr : liste){
 		System.out.println(rrr.getPris());
 		}
@@ -42,10 +53,7 @@ public class Main {
 	for(Resepter rr : liste2){
 		System.out.println(rr.getPris());
 		}
-
-	//int s = liste.finn(0).getPris();
-
-	//System.out.println(s);
+	//skirver ut listene
 
     }
 }

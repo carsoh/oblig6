@@ -36,7 +36,7 @@ abstract class EnkelResptListe implements Iterable<Resepter>  {
         while(temp.neste!=null){
             if (i==temp.data.getReseptnummer()){
                 return temp.data;
-            }
+            }else
             temp=temp.neste;
 
         }
